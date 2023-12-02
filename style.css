@@ -1,0 +1,137 @@
+body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+     }
+ h1 {
+          font-family: Arial;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 5px 5px rgba(0, 0, 0, 10);
+            background-color: #5eb2d3;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            font-size: 45px;
+  }
+p{
+  font-size: 20px;
+  font-family: "Arial";
+  color: #333;
+
+}
+#taskForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    height: 65px;
+    text-align: center;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    height: 65px;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text input field */
+form input[type="text"],
+form input[type="time"] {
+ 
+    width: 100%; /* By default, the input field takes 100% width */
+    max-width: 350px; /* Set a maximum width */
+    margin-bottom: 10px;
+    border: 1px solid rgb(117, 114, 114);
+    border-radius: 5px;
+    margin: 10px;
+
+}
+input::placeholder{
+    color: #333;
+    font-style: italic;
+    text-align: start;
+}
+button{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Submit button */
+form button[type="submit"] {
+    background-color: rgb(0,124,255);
+    color: #fff;
+    border: none;
+    width: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+form button[type="submit"]:hover {
+    background-color: rgb(0,90,250);
+}
+
+.task-list-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some additional styles for the task list items */
+
+li:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.edit-button,
+.edit-alarm-button,
+.delete-button {
+    background-color: rgb(0,124,220);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button:hover,
+.edit-alarm-button:hover,
+.delete-button:hover {
+    background-color: rgb(0,90,250); /* Change button color on hover */
+  }
+  #list{
+    display: none;
+  }

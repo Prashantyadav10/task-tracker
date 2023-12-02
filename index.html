@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Tracker</h1>
+
+    <form id="taskForm">
+        <div class="text">
+         <p>Task:-</p>
+        <input type="text" id="taskInput" placeholder="Enter a task" required> <br><br> 
+        </div>
+        <div class="time">
+         <p>Alarm Time:- </p>
+         <input type="time" id="alarmTime" placeholder="Enter the time interval" required><br><br>
+         </div>
+ 
+        <button type="submit">Add Task</button>
+    </form>
+    <div class="manu">
+        <ul>
+            <li>Delete All</li>
+            <li>Undone Work</li>
+             <li>Progress</li> 
+             <li>History</li> 
+        </ul>
+
+    </div>
+
+    <div class="task-list-container">
+        <h2>Task List-<hr></h2>
+        <ul id="taskList">
+            <!-- Tasks with alarm times will be displayed here -->
+            <li id="list">
+                Task 1 (Alarm time: 00:00 AM)
+                <button class="edit-button">Edit</button>
+                <button class="edit-alarm-button">Edit Alarm</button>
+                <button class="delete-button">Delete</button>
+            </li> 
+        </ul>
+    </div>
+
+    
+<script src="script.js">
+</script>
+
+
+</body>
+</html>
