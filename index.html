@@ -4,6 +4,8 @@
     <title>Task Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 <link rel="stylesheet" href="style.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <h1>Task Tracker</h1>
@@ -20,12 +22,12 @@
  
         <button type="submit">Add Task</button>
     </form>
-    <div class="manu">
-        <ul>
-            <li>Delete All</li>
-            <li>Undone Work</li>
-             <li>Progress</li> 
-             <li>History</li> 
+    <div class="navbar">
+        <ul class="navbar-li">
+            <li><span class="icons"><ion-icon name="trash"></ion-icon></span><a id="deletebtn" onclick="deleteall()">Delete All</a></li>
+            <li><span class="icons"><ion-icon name="thumbs-down"></ion-icon></span><a>Undone Work</a></li>
+             <li><span class="icons"><ion-icon name="stats-chart"></ion-icon></span><a>Progress</a></li> 
+             <li><span class="icons"><ion-icon name="time"></ion-icon></span><a>History</a></li> 
         </ul>
 
     </div>
@@ -35,7 +37,7 @@
         <ul id="taskList">
             <!-- Tasks with alarm times will be displayed here -->
             <li id="list">
-                Task 1 (Alarm time: 00:00 AM)
+                <p>Task 1 (Alarm time: 00:00 AM)</p>
                 <button class="edit-button">Edit</button>
                 <button class="edit-alarm-button">Edit Alarm</button>
                 <button class="delete-button">Delete</button>
