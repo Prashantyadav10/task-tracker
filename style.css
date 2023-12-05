@@ -15,29 +15,7 @@ body {
             text-align: center;
             font-size: 45px;
   }
-.navbar{
-    margin-top: 10px;
-}  
-.navbar-li{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-}
-.navbar-li li{
-    background-color:  rgb(0,124,255);
-    cursor: pointer;
-}
-.navbar-li li:hover{
-    background-color: rgb(0, 97, 200);
-}
-.navbar-li a{
-    color: #fff;
-}
-.icons{
-    margin-right: 5px;
-    color: #fff;
-}
 p{
   font-size: 20px;
   font-family: "Arial";
@@ -76,9 +54,8 @@ form {
 /* Text input field */
 form input[type="text"],
 form input[type="time"] {
- 
-    width: 100%; /* By default, the input field takes 100% width */
-    max-width: 350px; /* Set a maximum width */
+    width: 100%;
+    max-width: 350px;
     margin-bottom: 10px;
     border: 1px solid rgb(117, 114, 114);
     border-radius: 5px;
